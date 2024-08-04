@@ -669,7 +669,7 @@ for ((i=0; i<${#PACKAGE_LIST[@]}; i++)); do
 		cd "$TERMUX_PKG_MASSAGEDIR"
 		termux_step_extract_into_massagedir
 		termux_step_massage
-		cd "$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX_CLASSICAL"
+		cd "$TERMUX_PKG_MASSAGEDIR/$BOXVIDRA_PREFIX"
 		termux_step_post_massage
 		cd "$TERMUX_PKG_MASSAGEDIR"
 		if [ "$TERMUX_PACKAGE_FORMAT" = "debian" ]; then
