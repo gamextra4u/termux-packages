@@ -9,7 +9,7 @@ termux_step_extract_into_massagedir() {
 
 	# Extract tar in order to massage it
 	mkdir -p "$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX"
-	cd "$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX_CLASSICAL"
+	cd "$TERMUX_PKG_MASSAGEDIR/$BOXVIDRA_PREFIX"
 	tar xf "$TARBALL_ORIG"
 	rm "$TARBALL_ORIG"
 }
