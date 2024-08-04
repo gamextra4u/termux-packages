@@ -1,7 +1,7 @@
 termux_step_massage() {
 	[ "$TERMUX_PKG_METAPACKAGE" = "true" ] && return
 
-	cd "$TERMUX_PKG_MASSAGEDIR/$TERMUX_PREFIX_CLASSICAL"
+	cd "$TERMUX_PKG_MASSAGEDIR/$BOXVIDRA_PREFIX"
 
 	local ADDING_PREFIX=""
 	if [ "$TERMUX_PACKAGE_LIBRARY" = "glibc" ]; then
