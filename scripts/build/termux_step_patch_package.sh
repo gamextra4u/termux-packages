@@ -20,12 +20,12 @@ termux_step_patch_package() {
 	for patch in $PATCHES $DEBUG_PATCHES $ON_DEVICE_PATCHES; do
 		echo "Applying patch: $(basename $patch)"
 		test -f "$patch" && sed \
-			-e "s%\@TERMUX_APP_PACKAGE\@%${TERMUX_APP_PACKAGE}%g" \
-			-e "s%\@TERMUX_BASE_DIR\@%${TERMUX_BASE_DIR}%g" \
-			-e "s%\@TERMUX_CACHE_DIR\@%${TERMUX_CACHE_DIR}%g" \
-			-e "s%\@TERMUX_HOME\@%${TERMUX_ANDROID_HOME}%g" \
-			-e "s%\@TERMUX_PREFIX\@%${TERMUX_PREFIX}%g" \
-			-e "s%\@TERMUX_PREFIX_CLASSICAL\@%${TERMUX_PREFIX_CLASSICAL}%g" \
+			-e "s%\@TERMUX_APP_PACKAGE\@%${BOXVIDRA_APP_PACKAGE}%g" \
+			-e "s%\@TERMUX_BASE_DIR\@%${BOXVIDRA_BASE_DIR}%g" \
+			-e "s%\@TERMUX_CACHE_DIR\@%${BOXVIDRA_CACHE_DIR}%g" \
+			-e "s%\@TERMUX_HOME\@%${BOXVIDRA_ANDROID_HOME}%g" \
+			-e "s%\@TERMUX_PREFIX\@%${BOXVIDRA_PREFIX}%g" \
+			-e "s%\@TERMUX_PREFIX_CLASSICAL\@%${BOXVIDRA_PREFIX_CLASSICAL}%g" \
 			"$patch" | patch --silent -p1
 	done
 	shopt -u nullglob
