@@ -31,7 +31,7 @@ fi
 
 # Termux packages configuration.
 TERMUX_APP_PACKAGE="com.termux"
-BOXVIDRA_APP_PACKAGE="com.vectras.boxvidra
+BOXVIDRA_APP_PACKAGE="com.vectras.boxvidra"
 TERMUX_BASE_DIR="/data/data/${TERMUX_APP_PACKAGE}/files"
 BOXVIDRA_BASE_DIR="/data/data/${BOXVIDRA_APP_PACKAGE}/files"
 TERMUX_CACHE_DIR="/data/data/${TERMUX_APP_PACKAGE}/cache"
