@@ -30,18 +30,28 @@ else
 fi
 
 # Termux packages configuration.
-TERMUX_APP_PACKAGE="com.vectras.boxvidra"
+TERMUX_APP_PACKAGE="com.termux"
+BOXVIDRA_APP_PACKAGE="com.vectras.boxvidra
 TERMUX_BASE_DIR="/data/data/${TERMUX_APP_PACKAGE}/files"
+BOXVIDRA_BASE_DIR="/data/data/${BOXVIDRA_APP_PACKAGE}/files"
 TERMUX_CACHE_DIR="/data/data/${TERMUX_APP_PACKAGE}/cache"
+BOXVIDRA_CACHE_DIR="/data/data/${BOXVIDRA_APP_PACKAGE}/cache"
 TERMUX_ANDROID_HOME="${TERMUX_BASE_DIR}/home"
+BOXVIDRA_ANDROID_HOME="${BOXVIDRA_BASE_DIR}/home"
 TERMUX_APPS_DIR="${TERMUX_BASE_DIR}/apps"
+BOXVIDRA_APPS_DIR="${BOXVIDRA_BASE_DIR}/apps"
 TERMUX_PREFIX_CLASSICAL="${TERMUX_BASE_DIR}/usr"
-BOXVIDRA_PREFIX="/data/data/com.vectras.boxvidra/files/usr"
+BOXVIDRA_PREFIX_CLASSICAL="${BOXVIDRA_BASE_DIR}/usr"
 TERMUX_PREFIX="${TERMUX_PREFIX_CLASSICAL}"
+BOXVIDRA_PREFIX="${BOXVIDRA_PREFIX_CLASSICAL}"
 TERMUX_ETC_PREFIX_DIR_PATH="${TERMUX_PREFIX}/etc"
+BOXVIDRA_ETC_PREFIX_DIR_PATH="${BOXVIDRA_PREFIX}/etc"
 TERMUX_PROFILE_D_PREFIX_DIR_PATH="${TERMUX_ETC_PREFIX_DIR_PATH}/profile.d"
+BOXVIDRA_PROFILE_D_PREFIX_DIR_PATH="${BOXVIDRA_ETC_PREFIX_DIR_PATH}/profile.d"
 TERMUX_CONFIG_PREFIX_DIR_PATH="${TERMUX_ETC_PREFIX_DIR_PATH}/termux"
+BOXVIDRA_CONFIG_PREFIX_DIR_PATH="${BOXVIDRA_ETC_PREFIX_DIR_PATH}/termux"
 TERMUX_BOOTSTRAP_CONFIG_DIR_PATH="${TERMUX_CONFIG_PREFIX_DIR_PATH}/bootstrap"
+BOXVIDRA_BOOTSTRAP_CONFIG_DIR_PATH="${BOXVIDRA_CONFIG_PREFIX_DIR_PATH}/bootstrap"
 
 # Path to CGCT tools
 export CGCT_DIR="/data/data/com.termux/cgct"
@@ -49,7 +59,7 @@ export CGCT_DIR="/data/data/com.termux/cgct"
 # Package name for the packages hosted on the repo.
 # This must only equal TERMUX_APP_PACKAGE if using custom repo that
 # has packages that were built with same package name.
-TERMUX_REPO_PACKAGE="com.vectras.boxvidra"
+TERMUX_REPO_PACKAGE="com.termux"
 
 # Termux repo urls.
 TERMUX_REPO_URL=()
