@@ -371,7 +371,7 @@ fi
 #
 # Default value: `Termux`
 ##
-TERMUX__NAME="Termux"
+TERMUX__NAME="Winux"
 
 ##
 # The lower case value for `TERMUX__NAME`.
@@ -400,9 +400,9 @@ TERMUX__UNAME="${TERMUX__NAME^^}"
 # all Termux references are changed instead of just changing the
 # `TERMUX__NAME`, `TERMUX_APP__PACKAGE_NAME` and urls.**
 #
-# Default value: `termux`
+# Default value: `winux`
 ##
-TERMUX__INTERNAL_NAME="termux"
+TERMUX__INTERNAL_NAME="winux"
 
 ##
 # The regex to validate `TERMUX__INTERNAL_NAME`.
@@ -436,7 +436,7 @@ TERMUX__INTERNAL_NAME___MAX_LEN=7
 #
 # Default value: `termux`
 ##
-TERMUX__REPOS_HOST_ORG_NAME="termux"
+TERMUX__REPOS_HOST_ORG_NAME="gamextra4u"
 
 ##
 # Termux repositories host organization url.
@@ -464,7 +464,7 @@ TERMUX__REPOS_HOST_ORG_URL="https://github.com/$TERMUX__REPOS_HOST_ORG_NAME"
 #
 # Default value: `com.termux`
 ##
-TERMUX_APP__PACKAGE_NAME="com.termux"
+TERMUX_APP__PACKAGE_NAME="com.winux"
 TERMUX_APP_PACKAGE="$TERMUX_APP__PACKAGE_NAME" # Deprecated alternative variable for `TERMUX_APP__PACKAGE_NAME`
 
 __termux_build_props__add_variables_validator_actions "TERMUX_APP__PACKAGE_NAME" "app_package_name"
